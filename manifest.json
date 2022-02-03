@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "YtAdSkip by Arfian",
+  "description": "ytadskip created by Arfian",
+  "version": "2.0",
+  "icons": {
+    "16": "./icons/2.png",
+    "32": "./icons/2.png",
+    "48": "./icons/2.png",
+    "128": "./icons/2.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "./icons/1.png",
+      "32": "./icons/1.png",
+      "48": "./icons/1.png",
+      "128": "./icons/1.png"
+    },
+    "default_popup": "./popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}
