@@ -4,4 +4,4 @@ setInterval(() => {
     console.log(`ad detect`);
     skipBtn[0].click();
   }
-}, 100);
+}, 50);
